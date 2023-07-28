@@ -1,0 +1,102 @@
+section > h1{
+   margin-bottom: 4rem;
+   font-size: 3rem;
+}
+
+.breed{
+   display: flex;
+   gap: 5rem;
+   margin-bottom: 2rem;
+}
+
+.breed .image {
+   max-width: 20vw;
+   overflow: hidden;
+}
+
+.breed .image img{
+   border-radius: 2rem;
+   width: 100%;
+   aspect-ratio: 1/1;
+   object-fit: cover;
+}
+
+.breed .text h1{
+   font-size: 2rem;
+   margin: 2rem 0;
+}
+
+.breed .text p{
+   font-size: 1.2rem;
+   margin-bottom: 2rem;
+   font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+   section > h1{
+      font-size: 2.3rem;
+      margin-bottom: 3rem;
+   }
+   .breed .text h1{
+      font-size: 1.7rem;
+      margin: 1rem 0;
+   }
+
+   
+   .breed .text p{
+      margin-bottom: 1rem;
+   }
+
+   .breed{
+      gap: 4rem;
+   }
+}
+
+
+@media (max-width: 768px) {
+   section > h1{
+      font-size: 2rem;
+   }
+   
+   .breed .text h1{
+      margin: 0 0 00.2rem;
+   }
+   .breed .text p{
+      font-size: 1rem;
+   }
+   .breed{
+      gap: 3rem;
+      margin-bottom: 1rem;
+   }
+   
+   .breed .image img{
+      border-radius: 1rem;
+   }
+}
+
+
+@media (max-width: 500px) {
+   section > h1{
+      font-size: 1.7rem;
+      margin-bottom: 2rem;
+   }
+   .breed .text h1{
+      font-size: 1.4rem;
+   }
+   .breed .text p{
+      font-size: 0.8rem;
+   }
+   .breed{
+      gap: 2rem;
+   }
+   .breed .image img{
+      border-radius: 0.5rem;
+   }
+}
+
+
+@media (max-width: 400px) {
+   .breed{
+      gap: 1rem;
+   }
+}
